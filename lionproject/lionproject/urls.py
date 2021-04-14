@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-import blog.views
 import introduce.views
 
 urlpatterns = [
@@ -23,4 +22,5 @@ urlpatterns = [
     path('', introduce.views.home, name="home"),
     path('blog/', include('blog.urls')),
     path('wordcount/', include('wordcount.urls')),
+    path('calculator/', include('calculator.urls')),
 ]
