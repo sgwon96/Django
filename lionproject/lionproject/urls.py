@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', introduce.views.home, name="home"),
     path('blog/', include('blog.urls')),
+    path('wordcount/', include('wordcount.urls')),
 ]
